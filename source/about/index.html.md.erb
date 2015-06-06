@@ -1,0 +1,14 @@
+---
+title: About My Site
+---
+
+<h2>About My Site</h2>
+
+This statically generated site includes blog posts managed in a WordPress
+instance. This about page was made from a markdown file to illustrate that
+it is possible to mix and match content sources.
+
+This markdown file is first processed as an ERB template. So we can do dyanmic
+things, like generate 10 paragraphs of lorem ipsum during the compile step.
+
+<%= lorem.paragraphs 10 %>

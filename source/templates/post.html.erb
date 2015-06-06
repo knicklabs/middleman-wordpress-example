@@ -1,0 +1,15 @@
+<% content_for :title do %>
+  <%= post['title'] %>
+<% end %>
+
+<article class="post">
+  <header>
+    <h2><%= post['title'] %></h2>
+  </header>
+  <main>
+    <%= post['content'] %>
+  </main>
+  <footer>
+    <small>Posted by <%= post['author']['name'] %> on <%= Time.parse(post['date']).strftime('%d/%m/%Y') %></small>
+  </footer>
+</article>

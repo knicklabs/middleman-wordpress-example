@@ -1,0 +1,62 @@
+@import "normalize";
+@import"bourbon/bourbon";
+@import"base/base";
+@import"neat/neat";
+
+body {
+  padding: 1em;
+}
+
+.header {
+  @include clearfix();
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: $gutter;
+  padding-bottom: 1em;
+
+  h1 {
+    font-size: 1em;
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: $gutter/2;
+  }
+}
+
+.container {
+  @include outer-container();
+}
+
+.post {
+  ul {
+    @extend %default-ul;
+  }
+
+  ol {
+    @extend %default-ol;
+  }
+}
+
+h2 small {
+  font-size: 0.5em;
+}
+
+.pager {
+  border-top: 1px solid $light-gray;
+  margin-top: $gutter;
+  padding-top: $gutter/2;
+  @include clearfix;
+
+  .next {
+    float: right;
+  }
+
+  .prev {
+    float: left;
+  }
+}
