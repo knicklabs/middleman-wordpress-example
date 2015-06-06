@@ -5,7 +5,7 @@ statically generated Middleman site.
 
 Specifically, this example illustrates how to pull posts from WordPress and
 paginate them. It also illustrates how to include content from additional sources.
-In this case, we create an about page from a markdown file. 
+In this case, we create an about page from a markdown file.
 
 ## Setup WordPress
 
@@ -33,7 +33,7 @@ installation.
 1. Edit `config.rb` and update this string `http://middleman-wordpress-example.dev/wp-json`. It should point the your WordPress REST API. Do not include a trailing slash or any additional parameters.
 2. Activate and configure deploy if you plan to deploy this via rsync, ftp, sftp, or git. See the [documentation](https://github.com/middleman-contrib/middleman-deploy).
 
-## Server, Build, or Deploy
+## Serve, Build, or Deploy
 
 1. To build and server the site on http://localhost:4567, run `middleman server`
 2. To build the site into the build directory, run `middleman build`
